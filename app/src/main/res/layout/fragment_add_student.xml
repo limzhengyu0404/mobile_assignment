@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudentFragment" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Add Student"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_username"
+        android:layout_marginTop="40dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:hint="Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_marginTop="40dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_username" />
+
+    <EditText
+        android:id="@+id/add_password"
+        android:layout_marginTop="40dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_name" />
+
+    <EditText
+        android:id="@+id/add_batch"
+        android:layout_marginTop="40dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:hint="Batch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_password"/>
+
+    <EditText
+        android:id="@+id/add_id"
+        android:layout_marginTop="40dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:hint="Student ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_batch" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ADD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_id"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
